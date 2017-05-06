@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="kernel.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Models">
+      <UniqueIdentifier>{55a40ea2-b374-4dfe-947b-768ce0ebe339}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models\Headers">
+      <UniqueIdentifier>{9280a049-c0a5-436f-af7d-742e8a16c660}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models\Source">
+      <UniqueIdentifier>{0c09a505-3d13-48d0-9b98-802ca571f0d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{3ac5fe64-a167-41c7-8ff3-9a43167bbbd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Headers">
+      <UniqueIdentifier>{fbee7b76-a21e-4e0d-bb77-e51409ccebfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Source">
+      <UniqueIdentifier>{3e5143cb-d1ce-4a2b-aa01-429097191a65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm">
+      <UniqueIdentifier>{9739cd85-a27e-45ed-bda2-243b30116e33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\KMeans">
+      <UniqueIdentifier>{c72d0061-90e7-4703-9136-8991776abf02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\KMeans\Headers">
+      <UniqueIdentifier>{a3e29dbf-1ae7-45d0-9f54-8a863eb712af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\KMeans\Source">
+      <UniqueIdentifier>{9899d261-b2b9-45f3-87cd-22b1241e0959}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MovingPoint.cpp">
+      <Filter>Models\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UtilsMPI.cpp">
+      <Filter>Utils\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UtilsFileLoader.cpp">
+      <Filter>Utils\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Config.cpp">
+      <Filter>Models\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Cluster.cpp">
+      <Filter>Models\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UtilsCalculations.cpp">
+      <Filter>Utils\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="KMeans.cpp">
+      <Filter>Algorithm\KMeans\Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MovingPoint.h">
+      <Filter>Models\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsMPI.h">
+      <Filter>Utils\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsFileLoader.h">
+      <Filter>Utils\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Models\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Cluster.h">
+      <Filter>Models\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsCalculations.h">
+      <Filter>Utils\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="KMeans.h">
+      <Filter>Algorithm\KMeans\Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
